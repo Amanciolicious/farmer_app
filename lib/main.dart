@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:farmer_app/pages/home_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MaterialApp(home: MyApp()));
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
+         textTheme: GoogleFonts.mulishTextTheme(),
       ),
       home: const HomePage(),
     );
