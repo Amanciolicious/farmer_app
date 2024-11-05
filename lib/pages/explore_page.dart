@@ -1,8 +1,15 @@
+
+import 'package:farmer_app/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 
+import '../data/products.dart';
+
+
 class ExplorePage extends StatelessWidget {
   const ExplorePage({super.key});
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +103,7 @@ class ExplorePage extends StatelessWidget {
           GridView.builder(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
-            itemCount: 4,
+            itemCount: products.length,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 10,
@@ -104,9 +111,7 @@ class ExplorePage extends StatelessWidget {
             childAspectRatio: 1,
           ),
            itemBuilder: (context, index){
-            return const Card(
-              child: Text("Hi"),
-            );
+            return ProductCard(product: products[index],);
           },)
         ],
         
