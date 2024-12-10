@@ -68,9 +68,8 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 // Logo or any image can go here (optional)
-                Image.asset('assets/agriconnect_logo.jpg', height: 150), // Placeholder for farmer logo
-                
-                const SizedBox(height: 40),
+                Image.asset('assets/agriconnect_logo.png',
+                    height: 350), // Placeholder for farmer logo
                 // Username TextField
                 TextField(
                   controller: _usernameController,
@@ -87,10 +86,11 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.circular(15),
                       borderSide: BorderSide(color: Colors.green.shade700),
                     ),
-                    contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
+                    contentPadding: const EdgeInsets.symmetric(
+                        vertical: 15, horizontal: 10),
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 13),
                 // Password TextField
                 TextField(
                   controller: _passwordController,
@@ -108,7 +108,8 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.circular(15),
                       borderSide: BorderSide(color: Colors.green.shade700),
                     ),
-                    contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
+                    contentPadding: const EdgeInsets.symmetric(
+                        vertical: 15, horizontal: 10),
                   ),
                 ),
                 const SizedBox(height: 30),
@@ -116,19 +117,24 @@ class _LoginPageState extends State<LoginPage> {
                 ElevatedButton(
                   onPressed: _login,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green.shade700, // Green button color
+                    backgroundColor:
+                        Colors.green.shade700, // Green button color
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30), // Rounded button
                     ),
-                    padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 15, horizontal: 50),
                     elevation: 5, // Button shadow effect
                   ),
                   child: const Text(
                     "Login",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 15),
                 // Forgot Password (optional)
                 TextButton(
                   onPressed: () {},
