@@ -68,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 // Logo or any image can go here (optional)
-                Image.asset('assets/farmer_logo.jpg', height: 150), // Placeholder for farmer logo
+                Image.asset('assets/agriconnect_logo.jpg', height: 150), // Placeholder for farmer logo
                 
                 const SizedBox(height: 40),
                 // Username TextField
